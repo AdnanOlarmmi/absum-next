@@ -5,7 +5,6 @@ import flash from '../../../public/assets/images/flash-sale.png';
 import check from '../../../public/assets/images/check.png';
 import down from '../../../public/assets/images/dow.webp';
 import Image from 'next/image';
-// import demoVideo from '../../../public/assets/videos/1.mp4';
 
 const peculiarities = [
 	{
@@ -133,9 +132,31 @@ export default function Main() {
 				src={down}
 				unoptimized={true}
 			/>
-			{/* <video controls className='demo-video'>
-				<source src={demoVideo} type='video/mp4' />
-			</video> */}
+			<video
+				autoPlay
+				width='320'
+				height='240'
+				controls
+				// className='demo-video'
+			>
+				<source
+					src='https://www.youtube.com/embed/1iIZeIy7TqM'
+					type='video/mp4'
+				/>
+			</video>
+			<iframe
+				className='demo-video'
+				src='https://youtu.be/gKOC9-8fooI?si=7HnvZPnKICjzg3Nr'
+			></iframe>
+			<iframe
+				width='560'
+				height='315'
+				src='https://www.youtube.com/embed/zv6h_mVesYw?si=7HnvZPnKICjzg3Nr'
+				title='YouTube video player'
+				frameborder='0'
+				allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+				allowfullscreen
+			></iframe>
 
 			<div className='price-container'>
 				<div className='price-title flex-row flex-between'>
@@ -174,6 +195,7 @@ export default function Main() {
 					id='form'
 					action='https://formsubmit.co/2ede80122d0c35a28557659924e6810d'
 					method='post'
+					className='flex-column'
 				>
 					<div class='form-group'>
 						<label for='name'>

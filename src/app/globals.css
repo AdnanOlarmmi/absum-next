@@ -222,6 +222,7 @@ button:hover {
   margin: 0.5rem 0;
 }
 
+
 .flex-row {
   display: flex;
 }
@@ -273,6 +274,7 @@ button:hover {
 
 form {
   padding: 10px;
+  gap: 1rem;
 }
 /* on mobile  */
 @media (max-width: 800px) {
