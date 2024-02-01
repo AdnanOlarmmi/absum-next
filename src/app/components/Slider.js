@@ -1,3 +1,5 @@
+'use client';
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -21,6 +23,7 @@ import img7 from '../../../public/assets/images/7.jpeg';
 import img8 from '../../../public/assets/images/8.jpeg';
 import img9 from '../../../public/assets/images/9.jpeg';
 import img10 from '../../../public/assets/images/10.jpeg';
+import { useEffect } from 'react';
 // import img11 from '../assets/images/11.jpeg';
 // import img12 from '../assets/images/12.jpeg';
 // import img13 from '../assets/images/13.jpeg';
@@ -67,13 +70,14 @@ const imagesArr = [
 	// img26,
 ];
 
-export default function Slider() {
+
+export default function Slider({ width }) {
 	return (
 		<div>
-            <p className='hero-title'>3-in-1 MULTIFUNCTIONAL VEGETABLE CUTTER</p>
+			<p className='hero-title'>3-in-1 MULTIFUNCTIONAL VEGETABLE CUTTER</p>
 			<Swiper
 				modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-				slidesPerView={window.innerWidth < 1000 ? 1 : 3}
+				slidesPerView={width < 1000 ? 1 : 3}
 				spaceBetween={1}
 				onSlideChange={() => console.log('slide change')}
 				onSwiper={(swiper) => console.log(swiper)}
