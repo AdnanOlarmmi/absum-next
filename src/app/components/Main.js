@@ -222,17 +222,19 @@ export default function Main() {
 				/>
 				<form
 					id='form'
-					action='https://formsubmit.co/2ede80122d0c35a28557659924e6810d'
+					action='https://formsubmit.co/absumhub@gmail.com'
 					method='post'
 					className='flex-column'
 				>
 					<div>
 						<label for='quantity'>Quantity</label>
-						<select id='quantity' class='form-select' aria-label='Default select example'>
-							<option selected>One for ₦17,999.99 (saved)</option>
+						<select
+							id='quantity'
+							class='form-select'
+							aria-label='Default select example'
+						>
+							<option selected>One for ₦17,999.99</option>
 							<option value='1'>Two for ₦33,999.99</option>
-							<option value='2'>Three for ₦49,999.99</option>
-							<option value='3'>Four For ₦65,999.99</option>
 						</select>
 					</div>
 
