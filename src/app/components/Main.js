@@ -211,6 +211,13 @@ export default function Main() {
 					<span>10 items left</span> <div className='item-meter'></div>
 				</div>
 			</div>
+			<div>
+				<span className='hero-sub'>Note: </span>
+				<span className='delivery'>
+					Delivery will be processed between 24hrs within Lagos, and
+					communicated for outside Lagos delivery.
+				</span>
+			</div>
 			<div className='form'>
 				<div className='form-title'>Please Fill the form below to order</div>
 				<Image
@@ -234,11 +241,13 @@ export default function Main() {
 							class='form-select'
 							aria-label='Default select example'
 							onChange={(e) => handleFormChange(e)}
-							name="quantity"
+							name='quantity'
 							required
 						>
-							<option selected value='One for ₦17,999.99'>One for ₦17,999.99</option>
-							<option value='Two for ₦34,999.99' >Two for ₦34,999.99</option>
+							<option selected value='One for ₦17,999.99'>
+								One for ₦17,999.99
+							</option>
+							<option value='Two for ₦34,999.99'>Two for ₦34,999.99</option>
 						</select>
 					</div>
 

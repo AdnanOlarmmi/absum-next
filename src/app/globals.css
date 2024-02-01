@@ -315,7 +315,8 @@ form {
   font-weight: bold;
 }
 
-.more-info p {
+.more-info p,
+.delivery {
   font-size: 1.5rem;
   font-weight: bold;
 }
