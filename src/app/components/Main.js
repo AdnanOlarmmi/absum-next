@@ -320,7 +320,11 @@ export default function Main() {
 						name='_subject'
 						value='3-in-1 MULTIFUNCTIONAL VEGETABLE CUTTER NEW ORDER'
 					/>
-					<input type='hidden' name='_next' value='/thankyou' />
+					<input
+						type='hidden'
+						name='_next'
+						value='https://deluxe-druid-527391.netlify.app/thankyou'
+					/>
 					<button type='submit'>Submit</button>
 				</form>
 			</div>
