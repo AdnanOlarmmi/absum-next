@@ -1,6 +1,7 @@
 'use client';
 import Image from 'next/image';
 import thankYou from '../../../public/assets/images/thankyou.png';
+import { FloatingWhatsApp } from 'react-floating-whatsapp'
 
 export default function ThankYou() {
 	return (
@@ -19,9 +20,7 @@ export default function ThankYou() {
 								call, expediting the delivery process. AbsumHub will contact you
 								to confirm your order before proceeding.
 							</p>
-							<h2>HAVE ANY QUESTIONS? CONTACT US VIA CALL OR WHATSAPP. 09033931919</h2>
-							
-							<p>for contacting us, we will get in touch with you soon... </p>
+							<h2 className='text-center'>HAVE ANY QUESTIONS? CONTACT US VIA CALL OR WHATSAPP. 09033931919 we will get in touch with you soon...</h2>
 							<a href='/'>Back to home</a>
 							<div class='clr'></div>
 						</div>
@@ -30,6 +29,7 @@ export default function ThankYou() {
 				</div>
 				<div class='clr'></div>
 			</div>
+			<FloatingWhatsApp phoneNumber='2349033931919' accountName='Absum Hub' avatar='https://www.w3schools.com/howto/img_avatar.png' />
 		</section>
 	);
 }
