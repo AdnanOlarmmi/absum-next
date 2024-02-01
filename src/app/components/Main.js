@@ -4,6 +4,9 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import flash from '../../../public/assets/images/flash-sale.png';
 import check from '../../../public/assets/images/check.png';
 import down from '../../../public/assets/images/dow.webp';
+import juli from '../../../public/assets/images/juli.jpeg';
+import shred from '../../../public/assets/images/shred.jpeg';
+import slicer from '../../../public/assets/images/slicer.jpeg';
 import Image from 'next/image';
 
 const peculiarities = [
@@ -33,7 +36,32 @@ const peculiarities = [
 			'Made from premium ABS, PET, PP, and 304 stainless steel, environmental friendly and tasteless, secure for use, strong and sturdy enough for long-time service.',
 	},
 ];
-//count down from 5minutes
+const keyFeature = [
+	'✅ User-friendly and safe operation',
+	'✅ Electricity-free design',
+	'✅ Effortless cleaning, reducing dinner preparation time with three interchangeable blades',
+	'✅ Vegetable cutter functionality',
+	'✅ Versatile Vegetable Cutter and Slicer',
+	'✅ Slicing blade designed for vegetables and fruits',
+];
+
+const moreInfo = [
+	{
+		title:
+			'Easier Disassembly and Cleaning: Assembly and disassembly are a breeze, involving just four simple steps. Refer to the video or images for a detailed guide.',
+		img: shred,
+	},
+	{
+		title:
+			'After use, immerse the blades and machine in clean water. Simply rinse them and utilize the cleaning brush to ensure no residue remains.',
+		img: juli,
+	},
+	{
+		title:
+			'The coarse shredding blade efficiently shreds vegetables, perfect for crafting vegetable noodles. Its swift and straightforward operation minimizes your dinner preparation time significantly.',
+		img: slicer,
+	},
+];
 
 export default function Main() {
 	const Ref = useRef(null);
@@ -124,6 +152,24 @@ export default function Main() {
 					</div>
 				))}
 			</div>
+			<div className='flex-column-center'>
+				<p className='demo-instruction'>Key Features: </p>
+				<ul>
+					{keyFeature.map((feature, i) => (
+						<li key={i}>{feature}</li>
+					))}
+				</ul>
+			</div>
+			<div className='gap-4 more-info margin-center'>
+				{moreInfo.map((info, i) => (
+					<div>
+						<div className='more-info-img margin-center'>
+							<Image src={info.img} />
+						</div>
+						<p className='text-center'>{info.title}</p>
+					</div>
+				))}
+			</div>
 			<p className='demo-instruction'>Watch the video demo below</p>
 			<Image
 				width={70}
@@ -132,25 +178,8 @@ export default function Main() {
 				src={down}
 				unoptimized={true}
 			/>
-			<video
-				autoPlay
-				width='320'
-				height='240'
-				controls
-				// className='demo-video'
-			>
-				<source
-					src='https://www.youtube.com/embed/1iIZeIy7TqM'
-					type='video/mp4'
-				/>
-			</video>
 			<iframe
 				className='demo-video'
-				src='https://youtu.be/gKOC9-8fooI?si=7HnvZPnKICjzg3Nr'
-			></iframe>
-			<iframe
-				width='560'
-				height='315'
 				src='https://www.youtube.com/embed/zv6h_mVesYw?si=7HnvZPnKICjzg3Nr'
 				title='YouTube video player'
 				frameborder='0'
@@ -197,6 +226,16 @@ export default function Main() {
 					method='post'
 					className='flex-column'
 				>
+					<div>
+						<label for='quantity'>Quantity</label>
+						<select id='quantity' class='form-select' aria-label='Default select example'>
+							<option selected>One for ₦17,999.99 (saved)</option>
+							<option value='1'>Two for ₦33,999.99</option>
+							<option value='2'>Three for ₦49,999.99</option>
+							<option value='3'>Four For ₦65,999.99</option>
+						</select>
+					</div>
+
 					<div class='form-group'>
 						<label for='name'>
 							Name <span>*</span>

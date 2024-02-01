@@ -75,6 +75,7 @@ export default function Slider({ width }) {
 	return (
 		<div>
 			<p className='hero-title'>3-in-1 MULTIFUNCTIONAL VEGETABLE CUTTER</p>
+			<p className='hero-sub'>With Free Delivery!!!</p>
 			<Swiper
 				modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
 				slidesPerView={width < 1000 ? 1 : 3}
