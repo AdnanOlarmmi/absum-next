@@ -234,6 +234,8 @@ export default function Main() {
 							class='form-select'
 							aria-label='Default select example'
 							onChange={(e) => handleFormChange(e)}
+							name="quantity"
+							required
 						>
 							<option selected value='One for ₦17,999.99'>One for ₦17,999.99</option>
 							<option value='Two for ₦34,999.99' >Two for ₦34,999.99</option>
