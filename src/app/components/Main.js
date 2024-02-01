@@ -1,4 +1,4 @@
-"use client"
+'use client';
 import { useState, useEffect, useRef } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import flash from '../../../public/assets/images/flash-sale.png';
@@ -106,7 +106,6 @@ export default function Main() {
 			...formEl,
 			[e.target.name]: e.target.value,
 		});
-
 	};
 
 	return (
@@ -127,7 +126,13 @@ export default function Main() {
 				))}
 			</div>
 			<p className='demo-instruction'>Watch the video demo below</p>
-			<img width={70} height={70} alt='arrow down' src={down} />
+			<Image
+				width={70}
+				height={70}
+				alt='arrow down'
+				src={down}
+				unoptimized={true}
+			/>
 			{/* <video controls className='demo-video'>
 				<source src={demoVideo} type='video/mp4' />
 			</video> */}
@@ -157,12 +162,13 @@ export default function Main() {
 			</div>
 			<div className='form'>
 				<div className='form-title'>Please Fill the form below to order</div>
-				<img
+				<Image
 					className='margin-center block'
 					width={70}
 					height={70}
 					alt='arrow down'
 					src={down}
+					unoptimized={true}
 				/>
 				<form
 					id='form'
