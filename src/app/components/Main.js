@@ -72,6 +72,7 @@ export default function Main() {
 		altPhoneNumber: '',
 		state: '',
 		address: '',
+		quantity: 'One for ₦17,999.99',
 	});
 	// The state for our timer
 	const [timer, setTimer] = useState('00d : 02h : 10m : 00s');
@@ -232,9 +233,10 @@ export default function Main() {
 							id='quantity'
 							class='form-select'
 							aria-label='Default select example'
+							onChange={(e) => handleFormChange(e)}
 						>
-							<option selected>One for ₦17,999.99</option>
-							<option value='1'>Two for ₦33,999.99</option>
+							<option selected value='One for ₦17,999.99'>One for ₦17,999.99</option>
+							<option value='Two for ₦34,999.99' >Two for ₦34,999.99</option>
 						</select>
 					</div>
 
