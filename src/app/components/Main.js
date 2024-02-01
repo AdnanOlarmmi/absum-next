@@ -127,7 +127,7 @@ export default function Main() {
 				))}
 			</div>
 			<p className='demo-instruction'>Watch the video demo below</p>
-			<Image width={70} height={70} alt='arrow down' src={down} />
+			<img width={70} height={70} alt='arrow down' src={down} />
 			{/* <video controls className='demo-video'>
 				<source src={demoVideo} type='video/mp4' />
 			</video> */}
@@ -157,7 +157,7 @@ export default function Main() {
 			</div>
 			<div className='form'>
 				<div className='form-title'>Please Fill the form below to order</div>
-				<Image
+				<img
 					className='margin-center block'
 					width={70}
 					height={70}
