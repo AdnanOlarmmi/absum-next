@@ -336,7 +336,7 @@ export default function Main() {
 					<input
 						type='hidden'
 						name='_next'
-						value='https://deluxe-druid-527391.netlify.app/thankyou'
+						value='https://www.absumhub.com.ng/thankyou'
 					/>
 					<button type='submit'>Submit</button>
 				</form>
